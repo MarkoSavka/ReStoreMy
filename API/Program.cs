@@ -17,9 +17,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(); //ці два сервіси потрібні для генерації контенту в браузері
 
 //DbContext
-builder.Services.AddDbContext<StoreContext>(opt => //додає котекст БД StoreContext до контейнера служб DI,Це означає, що при кожному запиті буде створено новий екземпляр StoreContext
-{
-    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+builder.Services.AddDbContext<StoreContext>(opt => //додає котекст БД StoreContext до контейнера служб DI.Це означає, що при кожному запиті буде створено новий екземпляр StoreContext
+{                                                   //який буде передано в конструктор класу,який повинен обробити той чи інший запит з фронта,передано заздалегідь ще до обробки запиту
+    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));                                  //певним методом класу який обробляє цей запит
     //цей рядок вказує, що ви хочете використовувати SQLite як вашу базу даних. Він також отримує рядок підключення з файлу конфігурації за допомогою ключа "DefaultConnection"
 });
 
@@ -63,7 +63,7 @@ try
 }
 catch (Exception ex)
 {
-    logger.LogError(ex,"A problem occured doring migration");
+    logger.LogError(ex,"A problem occured during migration");
 }
 
 
