@@ -25,8 +25,6 @@ export const router = createBrowserRouter([
             {path:'basket',element:<BasketPage/>},
             {path:'checkout',element:<CheckoutPage/>},
             {path:'*',element:<Navigate replace to='/not-found'/>}
-
-
         ]
     }
 ])
