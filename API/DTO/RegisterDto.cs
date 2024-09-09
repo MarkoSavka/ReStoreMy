@@ -1,6 +1,6 @@
 namespace API.DTO;
 
-public class RegisterDto
+public class RegisterDto:LoginDto
 {
-    
+    public string Email { get; set; }
 }
