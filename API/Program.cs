@@ -54,7 +54,7 @@ builder.Services.AddIdentityCore<User>(opt =>
     {
         opt.User.RequireUniqueEmail = true;
     })
-    .AddRoles<IdentityRole>()
+    .AddRoles<Role>()
     .AddEntityFrameworkStores<StoreContext>();
 
 //налаштування автентифікації
