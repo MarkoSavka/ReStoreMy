@@ -74,6 +74,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 //JWT token added to DI
 builder.Services.AddScoped<TokenService>();
+//Payment intent packet
+builder.Services.AddScoped<PaymentService>();
 
 var app = builder.Build();
 
