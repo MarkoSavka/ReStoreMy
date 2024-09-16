@@ -21,7 +21,7 @@ import { useNavigate } from "react-router-dom";
   export default function Register() {
     const navigate=useNavigate();
     const [validationErrors, setValidationErrors] = useState([]);  
-    const { register, handleSubmit,setError, formState: { isSubmitting, errors, isValid } } = useForm({
+    const { register, handleSubmit, formState: { isSubmitting, errors, isValid } } = useForm({
       mode: 'onTouched'
     });
   
@@ -33,12 +33,12 @@ import { useNavigate } from "react-router-dom";
       } catch (error: any) {
         if (error.response && error.response.data && error.response.data.errors) {
           const serverErrors = error.response.data.errors;
-          const errorMessages = Object.values(serverErrors).flat();
-          setValidationErrors(errorMessages);
+          // const errorMessages = Object.values(serverErrors).flat();
+          setValidationErrors(Object.values(serverErrors).flat() as never[]);
         } else if (error.data && error.data.errors) {
           const serverErrors = error.data.errors;
-          const errorMessages = Object.values(serverErrors).flat();
-          setValidationErrors(errorMessages);
+          // const errorMessages = Object.values(serverErrors).flat();
+          setValidationErrors(Object.values(serverErrors).flat() as never[]);
         }
       }
     }

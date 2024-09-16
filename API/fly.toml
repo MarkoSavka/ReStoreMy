@@ -1,0 +1,32 @@
+# fly.toml app configuration file generated for restoremarko on 2024-09-16T15:31:00+03:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'restoremarko'
+primary_region = 'waw'
+
+[build]
+  image = 'marko3107/restore:latest'
+
+[env]
+  ASPNETCORE_URLS="http://+:8080"
+  StripeSettings__PublishableKey="pk_test_51PxpogKTI6usqA8ymWRKCGyovMBJEfAP0QiHDXHXwC7N16y34GNlcxqTMRdnv7r3qKfMPXB6ej9lxk9ZwLYTXTb100oQt07vyC"
+
+[experimental]
+  allowed_public_ports=[]
+  auto_rollback=true
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+  protocol="tcp"
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
