@@ -7,7 +7,7 @@ primary_region = 'waw'
   image = 'marko3107/restoremarko:latest'
 
 [env]
-  ASPNETCORE_URLS="http://+:8080"
+  ASPNETCORE_URLS = "http://+:8080"
   StripeSettings__PublishableKey="pk_test_51PxpogKTI6usqA8ymWRKCGyovMBJEfAP0QiHDXHXwC7N16y34GNlcxqTMRdnv7r3qKfMPXB6ej9lxk9ZwLYTXTb100oQt07vyC"
 
 [experimental]
