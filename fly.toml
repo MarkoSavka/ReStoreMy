@@ -9,6 +9,8 @@ primary_region = 'waw'
 [env]
   ASPNETCORE_URLS = "http://+:8080"
   StripeSettings__PublishableKey="pk_test_51PxpogKTI6usqA8ymWRKCGyovMBJEfAP0QiHDXHXwC7N16y34GNlcxqTMRdnv7r3qKfMPXB6ej9lxk9ZwLYTXTb100oQt07vyC"
+  Cloudinary__CloudName="diuurywu2"
+  Cloudinary__ApiKey="752332176827391"
 
 [experimental]
   allowed_public_ports=[]
