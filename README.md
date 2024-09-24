@@ -1,4 +1,4 @@
-Project Overview
+
 This is a full-stack application developed during a course, showcasing a variety of modern web development technologies. The project was built using the following tech stack:
 
 .NET for the back-end code
