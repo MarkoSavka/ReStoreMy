@@ -1,51 +1,51 @@
 
-This is a full-stack application developed during a course, showcasing a variety of modern web development technologies. The project was built using the following tech stack:
+⬇️This is a full-stack application developed during a course, showcasing a variety of modern web development technologies. The project was built using the following tech stack:⬇️
 
-.NET for the back-end code
+🔘.NET for the back-end code
 
-React for the client-side application (front-end)
+🔘React for the client-side application (front-end)
 
-Redux for client-side state management
+🔘Redux for client-side state management
 
-Material UI for React styling
+🔘Material UI for React styling
 
-TypeScript for type-safe front-end development
+🔘TypeScript for type-safe front-end development
 
-C# for back-end development
+🔘C# for back-end development
 
-Entity Framework for database interaction
+🔘Entity Framework for database interaction
 
-ASPNETCore Identity for authentication and authorization
+🔘ASPNETCore Identity for authentication and authorization
 
 
-Throughout the course, we build a complete application from start to finish, with each line of code explained in detail.
+Throughout the course, we build a complete application from start to finish, with each line of code explained in detail.⤵️
 
-Key Features and Topics Covered:
+📍Key Features and Topics Covered:
 
-Setting up the development environment
+🔘Setting up the development environment
 
-Building a .NET WebAPI application using the dotnet CLI
+🔘Building a .NET WebAPI application using the dotnet CLI
 
-Creating a React-based single-page application (SPA) for the store's user interface
+🔘Creating a React-based single-page application (SPA) for the store's user interface
 
-Implementing Entity Framework for querying and updating the database
+🔘Implementing Entity Framework for querying and updating the database
 
-Using ASP.NET Identity for user login and registration
+🔘Using ASP.NET Identity for user login and registration
 
-Managing navigation with React Router
+🔘Managing navigation with React Router
 
-Integrating Automapper for object mapping
+🔘Integrating Automapper for object mapping
 
-Designing a polished UI with Material Design
+🔘Designing a polished UI with Material Design
 
-Creating reusable form components with React Hook Form
+🔘Creating reusable form components with React Hook Form
 
-Implementing features like paging, sorting, searching, and filtering
+🔘Implementing features like paging, sorting, searching, and filtering
 
-Handling shopping basket orders
+🔘Handling shopping basket orders
 
-Processing payments via Stripe with 3D secure (EU standards)
+🔘Processing payments via Stripe with 3D secure (EU standards)
 
-Deploying the application to Fly.io
+🔘Deploying the application to Fly.io
 
 And much more!
